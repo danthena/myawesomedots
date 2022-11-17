@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=LXRandR autostart
+Comment=Start xrandr with settings done in LXRandR
+Exec=sh -c 'xrandr --output Virtual1 --mode 1920x1080'
+OnlyShowIn=LXDE
+X-XFCE-Autostart-Override=true
+
