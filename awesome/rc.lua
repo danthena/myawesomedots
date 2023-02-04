@@ -148,15 +148,17 @@ iconnet:set_text('  ')
 -- CPU
 cpuwidget = wibox.widget.graph()
 cpuwidget:set_width(100)
-cpuwidget:set_background_color"#494B4F"
+cpuwidget:set_background_color"#44475a"
+-- Old color was "#494B4F" here ^
 cpuwidget:set_color{type = "linear", from = {0, 0}, to = {50, 0},
                     stops = {{0, "#50fa7b"}, {0.5, "#f1fa8c"}, {1, "#ff5555"}}}
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1", 3)
 -- Mem
 memwidget = wibox.widget.graph()
 memwidget:set_width(100)
-memwidget:set_background_color"#494B4F"
-memwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}})
+memwidget:set_background_color"#44475a"
+-- Old color was "#494B4F" here ^
+memwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#50fa7b"}, {0.5, "#f1fa8c"}, {1, "#ff5555"}}})
 vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
 
 --MPD
