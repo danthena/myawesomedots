@@ -6,7 +6,7 @@
 cd ~
 wget https://github.com/dracula/gtk/archive/master.zip
 mkdir ~/.themes
-file-roller gtk-master.zip --extract-to=~/.themes
+unzip gtk-master.zip  -d ~/.themes
 cp ~/.themes/gtk-master -r ~/.themes/dracula
 rm -rf ~/.themes/gtk-master 
 
@@ -15,7 +15,7 @@ cd ~
 mkdir /.icons
 cd .icons
 wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
-file-roller Dracula.zip --extract-here
+unzip Dracula.zip
 rm Dracula.zip
 
 # Download dots
