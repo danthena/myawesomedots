@@ -12,7 +12,7 @@ rm -rf ~/.themes/gtk-master
 
 ## Getting Dracula Icon theme
 cd ~
-mkdir /.icons
+mkdir ~/.icons
 cd .icons
 wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 unzip Dracula.zip
