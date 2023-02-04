@@ -76,7 +76,7 @@ awful.layout.layouts = {
 --    awful.layout.suit.fair.horizontal,
 --    awful.layout.suit.spiral,
 --    awful.layout.suit.spiral.dwindle,
---    awful.layout.suit.max,
+    awful.layout.suit.max,
 --    awful.layout.suit.max.fullscreen,
 --    awful.layout.suit.magnifier,
 --    awful.layout.suit.corner.nw,
@@ -150,7 +150,7 @@ cpuwidget = wibox.widget.graph()
 cpuwidget:set_width(100)
 cpuwidget:set_background_color"#494B4F"
 cpuwidget:set_color{type = "linear", from = {0, 0}, to = {50, 0},
-                    stops = {{0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96"}}}
+                    stops = {{0, "#50fa7b"}, {0.5, "#f1fa8c"}, {1, "#ff5555"}}}
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1", 3)
 -- Mem
 memwidget = wibox.widget.graph()
