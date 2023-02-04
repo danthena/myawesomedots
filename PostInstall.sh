@@ -6,14 +6,14 @@
 cd ~
 wget https://github.com/dracula/gtk/archive/master.zip
 mkdir ~/.themes
-unzip gtk-master.zip  -d ~/.themes
+unzip master.zip  -d ~/.themes
 cp ~/.themes/gtk-master -r ~/.themes/dracula
 rm -rf ~/.themes/gtk-master 
 
 ## Getting Dracula Icon theme
 cd ~
 mkdir ~/.icons
-cd .icons
+cd ~/.icons
 wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 unzip Dracula.zip
 rm Dracula.zip
