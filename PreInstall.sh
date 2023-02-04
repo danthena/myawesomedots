@@ -26,6 +26,7 @@ PKGS=(
 'at-spi2-core'
 'psmisc'
 'lxpolkit'
+'unzip'
 
 ## Desktop Envs
 'awesome'
