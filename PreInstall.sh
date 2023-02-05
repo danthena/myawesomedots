@@ -10,6 +10,17 @@ LANG=C apt dist-upgrade -y
 echo "Dist Upgrade complete. Autoremoving old stuff"
 LANG=C apt autoremove -y
 
+# Backup original sources.list file
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+# Replace "main" with "testing" in sources.list file
+sed -i 's/main/testing/g' /etc/apt/sources.list
+
+# Update package cache
+sudo apt update
+apt dist-upgrade -y
+apt autoremove -y
+
 PKGS=(
 
 ## Base Install plus
@@ -76,7 +87,6 @@ PKGS=(
 'thunar-volman'
 'thunar-archive-plugin'
 'thunar-media-tags-plugin'
-'file-roller'
 'vlc'
 )
 
