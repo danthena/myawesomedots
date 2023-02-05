@@ -10,7 +10,7 @@
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
-      <property name="size" type="uint" value="26"/>
+      <property name="size" type="uint" value="32"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="4"/>
         <value type="int" value="8"/>
@@ -108,7 +108,7 @@
     <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-17" type="string" value="places">
-      <property name="show-button-type" type="int" value="0"/>
+      <property name="show-button-type" type="int" value="2"/>
       <property name="mount-open-volumes" type="bool" value="true"/>
     </property>
     <property name="plugin-18" type="string" value="screenshooter"/>

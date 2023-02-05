@@ -16,8 +16,9 @@ local theme = {}
 
 theme.font          = "sans 10"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
+theme.bg_normal     = "#282A36"
+--theme.bg_focus      = "#535d6c"
+theme.bg_focus     = "#BD93F9"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
@@ -129,6 +130,7 @@ theme.awesome_icon = theme_assets.awesome_icon(
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 --theme.icon_theme = nil
 theme.icon_theme = Dracula
+--theme.icon_theme = /home/dan/.icons/Dracula
 
 return theme
 
