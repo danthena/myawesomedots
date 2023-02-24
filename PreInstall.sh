@@ -65,6 +65,7 @@ PKGS=(
 
 ## Goodies
 'firefox-esr'
+'nitrogen'
 'lxappearance'
 'lxrandr'
 'xfce4-panel'
