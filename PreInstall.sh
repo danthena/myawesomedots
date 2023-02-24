@@ -94,6 +94,10 @@ for PKG in "${PKGS[@]}"; do
     echo "Installing: ${PKG}"
     LANG=C apt install "$PKG" -y --no-install-recommends
 done
+
+#Just a couple more things
+LANG=C apt install gvfs-backends gvfs-fuse moc mpd neofetch -y
+
 echo "All Normal Packages Installed"
 
 # Enable LightDM on boot
