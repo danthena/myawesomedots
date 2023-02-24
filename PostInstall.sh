@@ -19,9 +19,9 @@ unzip Dracula.zip
 rm Dracula.zip
 
 # Download dots
-echo "Downloading dotfiles"
-cd ~
-git clone https://github.com/danthena/myawesomedots
+#echo "Downloading dotfiles"
+#cd ~
+#git clone https://github.com/danthena/myawesomedots
 
 # Symlink dots
 awesomedots=$HOME/myawesomedots
