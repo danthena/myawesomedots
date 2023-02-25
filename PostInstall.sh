@@ -26,6 +26,15 @@ wget https://github.com/dracula/xfce4-terminal/archive/master.zip
 unzip master.zip
 rm master.zip
 
+## Dracula theme for Mousepad
+cd ~
+git clone https://github.com/dracula/mousepad.git
+cd mousepad
+mkdir -p "$HOME/.local/share/gtksourceview-4/styles"
+cp dracula.xml $HOME/.local/share/gtksourceview-4/styles
+cd ~
+rm -rf mousepad
+
 # Download dots
 #echo "Downloading dotfiles"
 #cd ~
