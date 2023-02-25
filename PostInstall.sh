@@ -18,6 +18,14 @@ wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 unzip Dracula.zip
 rm Dracula.zip
 
+## Dracula Theme for xfce4-terminal
+cd ~
+mkdir -p ~/.local/share/xfce4/terminal/colorschemes
+cd  ~/.local/share/xfce4/terminal/colorschemes
+wget https://github.com/dracula/xfce4-terminal/archive/master.zip
+unzip master.zip
+rm master.zip
+
 # Download dots
 #echo "Downloading dotfiles"
 #cd ~
