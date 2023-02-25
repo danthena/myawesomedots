@@ -14,21 +14,20 @@ LANG=C apt autoremove -y
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 # Replace "main" with "testing" in sources.list file
-sed -i 's/main/testing/g' /etc/apt/sources.list
+# sed -i 's/main/testing/g' /etc/apt/sources.list
 
 # Update package cache
-sudo apt update
-apt dist-upgrade -y
-apt autoremove -y
+#sudo apt update
+#apt dist-upgrade -y
+#apt autoremove -y
 
 PKGS=(
 
 ## Base Install plus
 'xserver-xorg'
-##'lightdm'
-##'lightdm-gtk-greeter'
+'lightdm'
+'lightdm-gtk-greeter'
 'desktop-base'
-'lxdm'
 'git'
 'wget'
 'curl'
@@ -75,7 +74,7 @@ PKGS=(
 'xfce4-goodies'
 'xfce4-power-manager-plugins'
 'xfce4-screenshooter'
-'xfce4-statusnotifier-plugin'
+'xfce4-sntray-plugin'
 'xfce4-taskmanager'
 'xfce4-whiskermenu-plugin'
 'xfce4-indicator-plugin'
@@ -97,12 +96,12 @@ for PKG in "${PKGS[@]}"; do
 done
 
 #Just a couple more things
-LANG=C apt install gvfs-backends gvfs-fuse moc mpd neofetch -y
+LANG=C apt install gvfs-backends gvfs-fuse ntfs-3g moc mpd neofetch gnome-disk-utility -y
 
 echo "All Normal Packages Installed"
 
 # Enable LightDM on boot
-#LANG=C systemctl enable lightdm
+LANG=C systemctl enable lightdm
 
 echo "Installing Brave Keyring"
 ## Install brave browser
